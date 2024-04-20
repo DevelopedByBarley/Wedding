@@ -8,8 +8,9 @@ class CSFRToken
   public function __construct()
   {
     // A titkos kulcs inicializálása
-    $this->secretKey = $_SERVER["CSFR_SECRET_KEY"] ?? null;
+    $this->secretKey = $_SERVER["CSFR_SECRET_KEY"];
   }
+
 
   public function generate()
   {
@@ -31,20 +32,20 @@ class CSFRToken
 
   public function check()
   {
-    
+
     if (session_id() == '') {
       session_start();
     }
 
 
-    if (!isset($_POST['csrf'])) {
+    if (!isset($_POST['csrf']) || !isset($_SESSION['csrf'])) {
       header($_SERVER['SERVER_PROTOCOL'] . ' 400 Bad Request');
       exit;
     }
 
     // Kódoljuk a token-t a titkos kulcs segítségével
     $token = hash_hmac('sha256', $_POST['csrf'], $this->secretKey);
-   
+
     if (!hash_equals($_SESSION['csrf'], $token)) {
       header($_SERVER['SERVER_PROTOCOL'] . ' 403 Forbidden');
       exit;
@@ -63,7 +64,7 @@ class CSFRToken
   private function isSafeOrigin()
   {
     // Az elfogadható eredetek listája
-    $safeOrigins = array('http://localhost:8080','http://localhost:9090' );
+    $safeOrigins = array('http://localhost:8080', 'https://fauszt.eu');
 
     // Ellenőrizzük az Origin fejlécet
     if (isset($_SERVER['HTTP_ORIGIN']) && in_array($_SERVER['HTTP_ORIGIN'], $safeOrigins)) {

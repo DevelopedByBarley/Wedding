@@ -4,7 +4,7 @@
   <div class="row d-flex justify-content-center align-items-center h-100">
     <div class="col-lg-6 col-md-8">
       <div class="card shadow-lg border-0 p-xl-5 rounded-lg">
-        <div class="card-header bg-white">
+        <div class="card-header sc-bg">
           <h3 class="text-center font-weight-light my-4">Admin Login</h3>
         </div>
         <div class="card-body">

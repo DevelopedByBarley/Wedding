@@ -38,16 +38,22 @@ class Controller
 
 
 
-  public function test()
+  public function register()
   {
-    var_dump("Test post!");
+    $this->CSFRToken->check();
+    $isSuccess = $this->Model->registration($_POST);
+
+    if ($isSuccess) $this->Alert->set('Sikeres regisztráció! Köszönjük regisztrációját', "success", "/eskuvonk", null);
   }
 
 
   public function index()
   {
+
     echo $this->Render->write("public/Layout.php", [
-      "content" => $this->Render->write("public/pages/Main.php", [])
+      "content" => $this->Render->write("public/pages/Main.php", [
+        "csfr" => $this->CSFRToken
+      ])
     ]);
   }
   public function cookie()

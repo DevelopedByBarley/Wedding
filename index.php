@@ -4,7 +4,6 @@ use App\Services\LanguageService;
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
-var_dump('Hello');
 require_once 'vendor/autoload.php';
 
 $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);

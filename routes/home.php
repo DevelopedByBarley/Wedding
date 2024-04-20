@@ -5,6 +5,6 @@ use App\Controllers\Controller;
 // route_group -> /
 
 
-$r->addRoute('GET', '', [Controller::class, 'index']);
+$r->addRoute('GET', 'eskuvonk/', [Controller::class, 'index']);
 //$r->addRoute('GET', 'cookie-info', [Controller::class, 'cookie']);
-//$r->addRoute('POST', 'test', [Controller::class, 'test']);
+$r->addRoute('POST', 'eskuvonk/register', [Controller::class, 'register']);

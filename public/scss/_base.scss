@@ -1,6 +1,117 @@
-.pr-bg {
-  background-color: $pr-bg;
+* {
+  font-family: $pr-font
 }
+
+
+h1, h2, h3, h4, h5, h6, p ,a {
+  color: $pr-color !important;
+}
+
+.sc-font {
+  font-family: $sc-font;
+}
+
+.w-80 {
+  width: 80%;
+} 
+
+.vh-75 {
+  height: 75vh;
+}
+
+.vh-90 {
+  height: 90vh ;
+}
+/* Colors */
+
+.pr-bg {
+  background-color: $pr-color;
+}
+.sc-bg {
+  background-color: $sc-bg;
+}
+
+.pr-color {
+  color: $pr-color;
+}
+
+
+
+/* Fonts */
+
+.bold {
+  font-weight: bolder;
+}
+
+
+.pr-font {
+  font-family: $pr-font;
+}
+
+.sc-font {
+  font-family: $sc-font;
+}
+
+
+/* Font-sizes  */
+
+.font-xs {
+  font-size: 1.3rem;
+}
+
+.font-sm {
+  font-size: 1.5rem;
+}
+.font-md {
+  font-size: 1.5rem;
+}
+
+.font-lg {
+  font-size: 2.5rem;
+}
+
+.font-xl {
+  font-size: 3rem;
+}
+
+.font-xxl {
+  font-size: 3rem;
+}
+
+.font-3xl {
+  font-size: 3rem;
+}
+
+@media(min-width: 768px) {
+
+  .font-md {
+    font-size: 2rem;
+  }
+
+  .font-sm {
+    font-size: 1.5rem;
+  }
+
+  .font-lg {
+    font-size: 3rem;
+  }
+
+  .font-xl {
+    font-size: 3.5rem;
+  }
+
+  .font-xxl {
+    font-size: 5rem;
+  }
+
+  .font-3xl {
+    font-size: 6rem;
+  }
+}
+
+
+
+/* Margins  */
 
 .mt-6 {
   margin-top: 70px;
@@ -16,15 +127,40 @@
 
 .mb-10 {
   margin-bottom: 350px;
-} 
-
-.pr-font {
-  font-family: $pr-font;
-}
-
-.sc-font {
-  font-family: $sc-font;
 }
 
 
+
+/* Custom buttons */
+
+
+.btn-pr {
+  background-color: $pr-color;
+  color: light;
+  padding: 1rem 2rem;
+  color: white !important;
+  display: inline-block;
+  border: 0px;
+  transition: all .4s ease-in-out;
+}
+
+.btn-pr:hover {
+  background-color: $pr-color-hover;
+}
+
+
+.divider {
+  width: 200px;
+  height: 50px;
+}
+
+.phone-icon {
+  width: 32px;
+  height: 32px;
+}
+
+.mail-icon {
+  width: 45px;
+  height: 45px;
+}
 
