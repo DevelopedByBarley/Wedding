@@ -8,7 +8,7 @@
       <div class="text-center my-5">
         <h4 class="text-uppercase mt-5 hovered"> Larus Étterem és Rendezvényközpont</h4>
         <a class="text-decoration-none" href="https://www.google.com/maps/place/Budapest,+Cs%C3%B6rsz+u.+18-b,+1124/data=!4m2!3m1!1s0x4741dc299baacbd5:0xb1b27857e2a2f5f3?sa=X&ved=1t:242&ictx=111" target="_blank">
-          <h5 class="text-dark">1124 Budapest, Csörsz utca 18/B</h5>
+          <h5 class="text-dark">1124 Budapest, asd utca 18/B</h5>
         </a>
       </div>
     </div>

@@ -11,7 +11,7 @@
          <div class="d-flex justify-content-center align-items-center mt-2">
            <p class="text-white font-xs mx-3 mx-lg-5">
              <img src="public/assets/images/telephone.png" class="phone-icon" />
-             +36 30 461 7457
+             +36 30 000 000
            </p>
            <p class="text-white font-xs mx-3 mx-lg-5">
              <img src="public/assets/images/mail-icon.png" class="mail-icon" />
